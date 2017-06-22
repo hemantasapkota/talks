@@ -13,4 +13,4 @@ present
 
 # Index
 
-* [Mobile Themed Go](https://www.meetup.com/golang-syd/events/240572740/) - [2017-Jun-Golang.slide](2017-Jun-Golang.slide)
+* [Mobile Themed Go](https://www.meetup.com/golang-syd/events/240572740/) - 2017-Jun-Golang.slide
