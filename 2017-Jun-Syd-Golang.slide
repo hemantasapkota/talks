@@ -1,0 +1,189 @@
+Golang & React Native
+15 Jun 2017
+Tags: golang, gomobile, react-native, react
+
+Hemanta Sapkota
+Mobile Apps Engineer, OpenLearning.com
+lexsapkota@gmail.com
+
+* About me
+
+.image https://secure.meetupstatic.com/photos/event/9/8/1/600_461702433.jpeg
+
+* About me
+
+- Code. Coffee. Fitness
+
+- Engineer / Hacker / Tinkerer / Coffee Lover / Fitness enthusiast
+
+.link https://github.com/hemantasapkota
+.link https://www.linkedin.com/in/hemantasapkota
+
+* Challenges - Developing Mobile Apps
+
+* Multiple platforms
+
+- Phone
+
+- Tablets
+
+- Watches
+
+- TV
+
+* Multiple SDK
+
+- Apple: XCode toolchain
+
+- Google: Android SDK / Android Studio
+
+- Facebook: React Native
+
+* Multiple codebases
+
+- IOS: Objective-C / Swift
+
+- Android: Java / Kotlin
+
+- React Native: Javascript
+
+* Constraints
+
+- Seprate domain specific logic with UX
+
+- Should be fast and responsive
+
+Native UX Patterns
+
+- Apple design guidelines
+
+- Google's material design
+
+* Golang and Mobile
+
+* Why ?
+
+- Bring your own GO
+
+- APIs
+
+- Concurrency
+
+- Ecosystem
+
+- Testing
+
+- Isomorphic Go ( CLI, Server, Mobile apps, Chrome extensions )
+
+* Steps to run Go in mobile
+
+- Setup
+
+- Generate bindings
+
+- Integrate in Xcode and Android Studio
+
+- Invoke in IOS
+
+- Invoke in Android
+
+* Setup
+
+gomobile released with Go 1.5
+.code 2017-Jun-Syd-Golang/init.sh
+
+* A simple program to get notifications
+
+.code 2017-Jun-Syd-Golang/main.go
+
+* Generate bindings
+
+.code 2017-Jun-Syd-Golang/bindings.sh
+
+* Invoke on IOS with Swift
+
+.code 2017-Jun-Syd-Golang/invoke.swift
+
+* Invoke on Android with Java
+.code 2017-Jun-Syd-Golang/invoke.java
+
+* Performance
+
+- Direct invocation will block the main thread. All calls should be via. queues and tasks
+
+- IOS: Dispatch Queues
+
+- Android: Task libraries
+
+* React Native
+
+* Fixes major pain points
+
+- Quick bootstrapping
+# Many starter kits are available
+
+- Hot loading
+# Edit, Save and Reload
+
+- Matue component libraries - https://nativebase.io/
+
+- Dynamic update - Microsoft Code Push
+# Apple approval times
+# Microsoft Code Push, Exponent
+
+- Works well with existing IOS & Android ecosystems
+# Via. Bridges
+
+- React ecosystem to mobile
+# Redux / MobX
+
+- App theming & Navigation
+
+* A View in React Native
+
+.code 2017-Jun-Syd-Golang/LoginView.js
+
+* A View in React Native - IOS Screenshot
+
+.image 2017-Jun-Syd-Golang/ss-iphone.png
+
+* A View in React Native - Android Screenshot
+
+.image 2017-Jun-Syd-Golang/ss-android.png
+
+* Integrating Go with React Native
+
+* How to
+
+- Integrate Go generated bindings to project ( Xcode, Android Studio )
+
+- Expose bindings to React Native via. Bridges
+
+- Invoke code from React Native
+
+* How to
+
+.code 2017-Jun-Syd-Golang/invoke-native-rn.js
+
+* Demo
+
+Instgram Power tool in Go - like, follow, comment and query Instagram.
+
+.link https://github.com/hemantasapkota/insta
+
+- Query hashtag - #Coffee
+
+- Get the first post's ID
+
+- Like the post
+
+- See if it worked
+
+* Questions
+
+* References
+
+- Gomobile Bind - https://godoc.org/golang.org/x/mobile/cmd/gomobile
+- React Native Performance - https://facebook.github.io/react-native/docs/performance.html
+- React Native Starter Kit - https://github.com/start-react/native-starter-kit
+- https://hackernoon.com/react-native-why-and-how-to-build-your-native-code-in-go-9fee492f0daa
