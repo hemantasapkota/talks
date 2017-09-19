@@ -1,0 +1,125 @@
+Declarative UX in Android with Kotlin and Anko
+19 Sept 2017
+Tags: android, ux, kotlin, react-native
+
+Hemanta Sapkota
+Android Engineer, Stan
+lexsapkota@gmail.com
+
+* About me
+
+.image 2017-Sept-Syd-Android/ProfPic-sm.jpg 300 _
+
+- Code. Coffee. Fitness
+
+.link https://github.com/hemantasapkota
+.link https://www.linkedin.com/in/hemantasapkota
+
+* UX in Android
+
+- Case Study - Stan Android App's Feed
+
+- Regular Implementation
+
+- Anko Implementation
+
+* Feed
+
+.image 2017-Sept-Syd-Android/ss1.png
+
+* Regular way - XML Layout Files - Feed
+
+.image 2017-Sept-Syd-Android/ss2_1.png 600 810
+
+* Regular way - XML Layout Files - Feed
+
+.image 2017-Sept-Syd-Android/ss3.png 600 810
+
+* Regular way - XML Layout Files - Feed
+
+.code 2017-Sept-Syd-Android/feed_layout.xml
+
+* Pros of XML Layout Resources
+
+- Visual / Drag and Drop
+
+- Quick to develop
+
+* Cons of XML Layout Resources
+
+- Doesn't scale for complex layouts
+
+- Model mismatch - Switch between code and data
+
+* Anko Way
+
+* What is Anko
+
+- Declaratively construct UX
+
+- Created by the team behind Kotlin
+
+- Can mix-and-match XML and code layout
+
+- Can convert exsiting XML layouts to Anko
+
+.link github.com/Kotlin/anko
+
+* Feed Layout Code
+
+.image 2017-Sept-Syd-Android/ss4.png 600 810
+
+* Feed Layout With Anko
+
+.code 2017-Sept-Syd-Android/code.kt
+
+* Feed Layout - Breakdown
+
+* Feed Layout - Breakdown
+
+- Setup root view
+
+.code 2017-Sept-Syd-Android/code-s1.kt
+
+* Feed Layout - Breakdown
+
+- Root view with a child layout
+
+.code 2017-Sept-Syd-Android/code-s2.kt
+
+* Feed Layout - Breakdown
+
+- Root view with a child layout and child components
+
+.code 2017-Sept-Syd-Android/code-s3.kt
+
+* Feed Layout - Breakdown
+
+- Child component with layout parameters
+
+.code 2017-Sept-Syd-Android/code-s4.kt
+
+* Integrating Anko - How to
+
+- Add the dependency for Android Studio
+
+.code 2017-Sept-Syd-Android/anko-integrate.kt
+
+* Tips for integrating Anko in existing projects
+
+- Use Anko plugin for Android Studio to convert XML layouts to Anko code
+
+.image 2017-Sept-Syd-Android/ss6.png 600 _
+
+* Tips for integrating Anko in existing projects
+
+- Custom View - create wrappers
+
+.code 2017-Sept-Syd-Android/customcode.kt
+
+* To-Do
+
+- Compare load times for XML layouts, Anko and Constraint Layout
+
+* Questions
+
