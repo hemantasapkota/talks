@@ -14,3 +14,4 @@ present
 # Index
 
 * [Mobile Themed Go](https://www.meetup.com/golang-syd/events/240572740/) - 2017-Jun-Golang.slide
+* [Declarative UX in Android with Kotlin & Anko](https://www.meetup.com/Android-Australia-User-Group-Sydney/events/242603878/) - 2017-Sept-Syd-Android.slide
